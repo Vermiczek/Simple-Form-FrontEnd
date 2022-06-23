@@ -18,11 +18,14 @@ export const StyledPreparationData = styled.div`
       width: 250px;
       
       outline: none; */
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 10px;
     color: #392644;
     border-radius: 15px;
     border: none;
     width: 100%;
+    min-width: 40px;
 
     :valid,
     :focus {
