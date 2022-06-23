@@ -16,9 +16,7 @@ export const PreparationTimeData = () => {
     values.preparation_time =
       timeValues.hours + ":" + timeValues.minutes + ":" + timeValues.seconds;
   }, [timeValues, values]);
-  useEffect(() => {
-    console.log(values.preparation_time);
-  }, [values.preparation_time]);
+  useEffect(() => {}, [values.preparation_time]);
   return (
     <StyledPreparationData>
       <div className="duration-wrapper">
