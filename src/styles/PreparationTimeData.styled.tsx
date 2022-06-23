@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const StyledPreparationData = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   .duration-wrapper {
-    width: 5px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .styled-input-tiny {
     background: linear-gradient(90deg, #5b115e, #e44d4d) center bottom/0% 2px
@@ -21,8 +22,7 @@ export const StyledPreparationData = styled.div`
     color: #392644;
     border-radius: 15px;
     border: none;
-    margin-left: 13px;
-    margin-right: 13px;
+    width: 100%;
 
     :valid,
     :focus {
