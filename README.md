@@ -1,46 +1,9 @@
-# Getting Started with Create React App
+Node version: v16.14.0
+Npm version: v8.3.1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cloning the repo and running "npm i" should work just fine with running the solution although there is live preview.
 
-## Available Scripts
 
-In the project directory, you can run:
+A small recruitment task I've done for one of the front end recruitments. Unfortunately I haven't had much time to finish it because I've been very busy (I've been moving towns during this period and had different recruitment tasks with earlier deadlines) so I ended up with 1 day (around 6 hours total, hence very few commits in the repo) to finish the task down from the 6 days I was given. Fortunately the task was pretty easy, so I managed to finish the core logic almost fully, although the styling, testing and code quality had to suffer a little bit. 
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I was supposed to use react-form, but from what I've read it's a deprecated library and using it would force me to downgrade two versions of React down to v16.x. Therefore I've decided to use a different library that's also more popular - Formik. It also appears to be better in many ways - it doesn't needlessly use Redux to store data and it works much faster, although it does have one huge problem - it's quite difficult to test it to the point that I haven't been able to do so in a given timeframe. The error is pretty stupid and I guess it will take some time before I figure out how to get around it. The UI also isn't the prettiest and the styling gave me an attitude in the programming process, but I can with all honesty say that it would look better if I managed to start the task sooner and therefore had more time. Overall I'd say it came out alright but I'm not satisfied. 
