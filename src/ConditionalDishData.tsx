@@ -1,6 +1,7 @@
 import { Field, useFormikContext } from "formik";
 import { StyledConditionalDishData } from "./styles/ConditionalDishData.styled";
 
+//component responsible for viewing the correct input fields depending on which dish type was chosen
 export const ConditionalDishData = () => {
   const { values } = useFormikContext<any>();
   if (values.type === "pizza")

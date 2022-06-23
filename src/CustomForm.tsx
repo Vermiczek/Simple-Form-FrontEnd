@@ -4,6 +4,8 @@ import { ConditionalDishData } from "./ConditionalDishData";
 import { PreparationTimeData } from "./PreparationTimeData";
 import { StyledCustomForm } from "./styles/CustomForm.styled";
 
+//main form component containing most of the form, the Formik component,
+//other smaller components and the validation and submitting methods
 export const CustomForm = () => {
   const [error, setError] = useState("");
 
@@ -107,12 +109,11 @@ export const CustomForm = () => {
           })
             .then((res) => res.json())
             .then((response) => {
-              console.log(response);
+              alert(JSON.stringify(response, null, 2));
             })
             .catch((error) => {
-              console.log(error);
+              setError(error);
             });
-          alert(JSON.stringify(values, null, 2));
           setSubmitting(false);
         }}
       >
@@ -164,6 +165,7 @@ export const CustomForm = () => {
             <button type="submit" disabled={isSubmitting}>
               Submit
             </button>
+            <div>{error}</div>
           </Form>
         )}
       </Formik>

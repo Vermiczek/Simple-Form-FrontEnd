@@ -2,6 +2,9 @@ import { useFormikContext } from "formik";
 import { useEffect, useState } from "react";
 import { StyledPreparationData } from "./styles/PreparationTimeData.styled";
 
+//components responsible for taking in the preparation time data as an input and making sure it's valid
+//each of the input fields has similiar methods which check whether the
+//data they take in is valid.
 export const PreparationTimeData = () => {
   const { values } = useFormikContext<any>();
   const [timeValues, setTimeValues] = useState<any>({
@@ -22,6 +25,7 @@ export const PreparationTimeData = () => {
         <input
           className="styled-input-tiny"
           type="number"
+          data-testid="input-hour"
           min="0"
           max="99"
           maxLength={1}
@@ -52,6 +56,7 @@ export const PreparationTimeData = () => {
           type="number"
           min="0"
           max="59"
+          data-testid="input-minute"
           className="styled-input-tiny"
           value={timeValues.minutes}
           onChange={(e) => {
@@ -80,6 +85,7 @@ export const PreparationTimeData = () => {
           type="number"
           min="0"
           max="59"
+          data-testid="input-second"
           className="styled-input-tiny"
           value={timeValues.seconds}
           onChange={(e) => {
