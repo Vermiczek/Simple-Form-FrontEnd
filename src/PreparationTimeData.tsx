@@ -4,7 +4,7 @@ import { StyledPreparationData } from "./styles/PreparationTimeData.styled";
 
 //components responsible for taking in the preparation time data as an input and making sure it's valid
 //each of the input fields has similiar methods which check whether the
-//data they take in is valid.
+//data they take in is valid. It uses FormikContext to connect to the main Formik component.
 export const PreparationTimeData = () => {
   const { values } = useFormikContext<any>();
   const [timeValues, setTimeValues] = useState<any>({
